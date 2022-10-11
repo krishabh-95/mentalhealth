@@ -3,13 +3,15 @@ import React from 'react';
 import { StyleSheet, View, Button } from 'react-native';
 import UploadMaterials from './UploadMaterials.js';
 import SignUp from './SignUp.js';
+import SettingsPage from './SettingsPage.js';
+import SettingsComponent from './SettingsComponent.js';
 
 //This is the main component of this app
 class App extends React.Component {
   constructor()
   {
     super();
-    this.state = {page : "default"}; //The state variable page keeps track of the page that should be opened in the app
+    this.state = {page : "settings_page"}; //The state variable page keeps track of the page that should be opened in the app
   }
 
   updatePage = (newPage) => {
@@ -22,6 +24,8 @@ class App extends React.Component {
 
     if(this.state.page==="upload_content")
       pageContent = <UploadMaterials/>;
+    else if(this.state.page ==="settings_page")
+      pageContent = <SettingsComponent/>;
     else if(this.state.page==="signup")
       return <SignUp/>;
       
@@ -37,6 +41,8 @@ class App extends React.Component {
               <Button title="Self-help" style={styles.buttonStyle}>
               </Button>
               <Button title="Profile" style={styles.buttonStyle} onPress={() => this.updatePage("signup")}>
+              </Button>
+              <Button title="Settings" style={styles.buttonStyle} onPress={() => this.updatePage("settings_page")}>
               </Button>
             </View>
           </View>
