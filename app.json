@@ -1,7 +1,12 @@
 {
   "expo": {
+<<<<<<< HEAD
     "name": "mentalhealth",
     "slug": "mentalhealth",
+=======
+    "name": "heartrateapp",
+    "slug": "heartrateapp",
+>>>>>>> rishabh_branch
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,17 +23,25 @@
       "**/*"
     ],
     "ios": {
+<<<<<<< HEAD
       "supportsTablet": true,
 	  "infoPlist": {
         "NSPhotoLibraryUsageDescription": "This app needs access to the photos in your mobile device.",
 		"NSCameraUsageDescription": "This app needs to access the camera."
       }
+=======
+      "supportsTablet": true
+>>>>>>> rishabh_branch
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
+<<<<<<< HEAD
         "backgroundColor": "#FFFFFF",
 		"permissions": ["READ_MEDIA_IMAGES","READ_MEDIA_VIDEO","CAMERA"]
+=======
+        "backgroundColor": "#FFFFFF"
+>>>>>>> rishabh_branch
       }
     },
     "web": {
