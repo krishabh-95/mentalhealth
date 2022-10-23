@@ -1,0 +1,27 @@
+{
+  "name": "heartrateapp",
+  "plugins": [
+    "react-native-health"
+  ],
+  "ios": {
+    "bundleIdentifier": "com.rmbpsychology.heartrateapp"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "7153cb53-a662-46e4-8dd9-862dbb08f24b"
+    }
+  },
+  "expo": {
+    "android": {
+      "package": "com.rmbpsychology.heartrateapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7153cb53-a662-46e4-8dd9-862dbb08f24b"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.rmbpsychology.heartrateapp"
+    }
+  }
+}
